@@ -9,12 +9,8 @@ console.log(findDaysInMonth('February', 2012));
 
 //Task No2
 
-let operandI = (i) => {
-   return !isNaN(+(i));
-};
-let operationX = (x) => {
-   return x == '+' || x == '-' || x == '*' || x == '/';
-};
+let operandI = (i) => !isNaN(+(i));
+let operationX = (x) => x == '+' || x == '-' || x == '*' || x == '/';
 let result = 0;
 let operation = prompt('Enter operator:');
 while (operationX(operation) === false) {
